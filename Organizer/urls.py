@@ -6,7 +6,12 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Incluir as rotas de professores do app
-    path('', include('app.routes.professoresRoutes')),  # Substitua pelo nome real do seu app
+    path('', include('app.routes.professoresRoutes')),
+    path('', include('app.routes.materiasRoutes')),   # Substitua pelo nome real do seu app
+    path('', include('app.routes.diasdasemanaRoutes')),
+    path('', include('app.routes.disponibilidadeRoutes')),
+    path('', include('app.routes.adesaoRoutes')),
+    path('', include('app.routes.turmaRoutes')),
 ]
 
 # Configuração para servir arquivos de mídia durante o desenvolvimento

@@ -2,8 +2,8 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
-from ..models import Professor  # Importando do arquivo models.py do seu app
-from ..serializers import ProfessorSerializer  # Importando do arquivo serializers.py
+from ..models import Professor
+from ..serializers.professoresSerializer import ProfessorSerializer  # Updated import
 
 class ProfessorViewSet(viewsets.ModelViewSet):
     """

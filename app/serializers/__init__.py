@@ -1,0 +1,6 @@
+from .professoresSerializer import ProfessorSerializer
+from .materiaSerializer import MateriaSerializer
+from .diasdasemanaSerializer import DiasDaSemanaSerializer
+from .disponibilidadeSerializer import DisponibilidadeSerializer
+from .adesaoSerializer import AdesaoSerializer
+from .turmaSerializer import TurmaSerializer 

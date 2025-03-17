@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Professor 
+from ..models import Professor
 
 class ProfessorSerializer(serializers.ModelSerializer):
     """
@@ -9,4 +9,4 @@ class ProfessorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Professor
         fields = ['id', 'name', 'lastname', 'email', 'icon_photo']
-        read_only_fields = ['id']
+        read_only_fields = ['id'] 
