@@ -6,7 +6,8 @@ from .campus import Campus
 class Disponibilidade(models.Model):
     professor = models.ForeignKey(Professor, on_delete=models.CASCADE)
     dia_da_semana = models.ForeignKey(DiasDaSemana, on_delete=models.CASCADE)
-    campus = models.ForeignKey(Campus, on_delete=models.CASCADE, null=True, blank=True)  
+    campus = models.ForeignKey(Campus, on_delete=models.CASCADE, null=True, blank=True)
+    observacao = models.TextField(blank=True, null=True)  # Permite valores em branco e nulos
 
     class Meta:
         unique_together = ('professor', 'dia_da_semana', 'campus')

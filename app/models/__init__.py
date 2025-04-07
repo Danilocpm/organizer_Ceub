@@ -4,3 +4,4 @@ from .diasdasemana import DiasDaSemana
 from .disponibilidade import Disponibilidade
 from .adesao import Adesao
 from .turma import Turma
+from .semestre import Semestre
